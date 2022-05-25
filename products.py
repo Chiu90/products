@@ -11,3 +11,7 @@ while True:
 print(products)
 
 products[0][0]#等於products裡的地0格的第0格[(n,p),(n,p)]等於第一個小括號裡的第一個
+
+for p in products:
+	print(p)
+	print(p[0], '的價格是', p[1])
