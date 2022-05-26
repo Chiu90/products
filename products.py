@@ -15,3 +15,12 @@ products[0][0]#等於products裡的地0格的第0格[(n,p),(n,p)]等於第一個
 for p in products:
 	print(p)
 	print(p[0], '的價格是', p[1])
+
+with open('products.csv','w', encoding='utf-8' )as f:#存成csv
+	f.write('商品,價格\n')
+	for p in products:
+		f.write(p[0] + ',' +p[1] +'\n')
+
+#字串可以相加相乘
+'abc' + '123' == 'abc123'
+'abc' * 2 == 'abcabc'
